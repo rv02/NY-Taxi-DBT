@@ -1,9 +1,5 @@
 
 
-  create or replace view `cogent-transit-339013`.`dbt_rv0010`.`stg_yellow_tripdata`
-  OPTIONS()
-  as 
-
 select
    -- identifiers
     to_hex(md5(cast(coalesce(cast(vendorid as 
@@ -50,9 +46,3 @@ select
 from `cogent-transit-339013`.`trips_data_all`.`yellow_tripdata`
 
 -- dbt build --m <model.sql> --var 'is_test_run: false'
-
-
-  limit 100
-
-;
-

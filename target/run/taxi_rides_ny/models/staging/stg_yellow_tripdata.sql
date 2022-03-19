@@ -50,9 +50,5 @@ select
 from `cogent-transit-339013`.`trips_data_all`.`yellow_tripdata`
 
 -- dbt build --m <model.sql> --var 'is_test_run: false'
-
-
-  limit 100
-
 ;
 
